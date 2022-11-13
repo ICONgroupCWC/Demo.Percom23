@@ -1,0 +1,95 @@
+openapi: 3.0.1
+info:
+  title: AI Service
+  description: This is the IntellIoT AI servie. It is not (yet) documented anywhere
+  contact:
+    name: ICON
+    email: sumudu.samarakoon@oulu.fi
+  version: 1.0.0
+servers:
+- url: /
+tags:
+- name: AI_Service
+  description: HIL/Controller request help from AI
+paths:
+  /AI_Service/compute_deliveryInformation:
+    get:
+      summary: request AI to compute drop point coordinates
+      description: Request AI to compute
+      operationId: a_i_service_compute_delivery_information_get
+      parameters:
+      - name: storageId
+        in: query
+        description: "ID of the position of the workpiece to compute delivery information."
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: string
+      - name: cameraHostname
+        in: query
+        description: "host name of the camera to get the image from."
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: string
+      - name: cameraId
+        in: query
+        description: "ID of the required camara on the addressed host. Ignored, as\
+          \ long as only one camera is there."
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Computation successful
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ComputeDeliveryInformationResponse'
+        "405":
+          description: Method Not Allowed
+        "500":
+          description: Unable to compute delivery information.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      x-openapi-router-controller: swagger_server.controllers.default_controller
+components:
+  schemas:
+    ErrorResponse:
+      type: object
+      properties:
+        error-code:
+          type: integer
+        error-description:
+          type: string
+    ComputeDeliveryInformationResponse:
+      type: array
+      items:
+        $ref: '#/components/schemas/ComputeDeliveryInformationResponse_inner'
+    ComputeDeliveryInformationResponse_inner:
+      type: object
+      properties:
+        xcoordinate:
+          type: number
+          description: measured from the upper left marker (the most left for all
+            storage places)
+        ycoordinate:
+          type: number
+          description: measured from the upper left marker
+        radius-mm:
+          type: number
+        confidence:
+          type: number
+          format: double
+      example:
+        ycoordinate: 6.02745618307040320615897144307382404804229736328125
+        radius-mm: 1.46581298050294517310021547018550336360931396484375
+        confidence: 5.962133916683182377482808078639209270477294921875
+        xcoordinate: 0.80082819046101150206595775671303272247314453125
+
