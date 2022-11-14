@@ -18,8 +18,11 @@ This is a demonstration of a semi-autonomous transportation task.
 
 ## Components
 
-Description
-
+This are the hardware components used in the system:
+- Jetank \gls{ai} powered by Nvidia Jetson nano developer module with 16GB eMMC and 4GB RAM
+- Raspberry Pi V2 camera
+- Raspberry Pi 4 Model B
+- 64-bit Windows 10 compute
 
 ### Robot platform
 
