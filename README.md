@@ -39,7 +39,7 @@ Contents in the folder [edge_ai_delivery](edge_ai_delivery)
  
  **Installation:**
 ```python
-pip install requirements.txt
+pip install requirement.txt
 ```
 
 **HTTP call to obtain delivery information:**
@@ -56,8 +56,18 @@ The AI model size is about 140 MB and exceeds the size limit. Please contact [co
 
 ### Camera with RPi
 
-Description
+**Code:**
+Contents in the folder [selection_robot](selection_robot)
 
+ **Installation:**
+```python
+git clone https://github.com/waveshare/JETANK.git
+cd JETANK
+chmod +x install.py
+chomd +x config.py
+./install.sh
+./config.sh
+```
 
 ## Demo in action
 
