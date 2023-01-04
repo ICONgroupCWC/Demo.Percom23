@@ -3,17 +3,17 @@
 
 This is a demonstration of a semi-autonomous transportation task. 
 - An automated guided vehicle (AGV) equipped with a robotic arm needs to 
--- pick and object from a source point,
--- follow a path defined by black stripes, and 
--- drop the object at a specific drop-point in one of four destinations implicitly defined by a human operator.
+ -- pick and object from a source point,
+ -- follow a path defined by black stripes, and 
+ -- drop the object at a specific drop-point in one of four destinations implicitly defined by a human operator.
 
 - Human operator defines the destination and exact drop point (delivery information) by placing an irregular black surface inside a destination.
--- Irregular shape is referred to as custom drop area
--- The exact drop-point is the center of the custom drop area, which is defined as the center of the largest circle that is placed inside the custom drop area. 
+ -- Irregular shape is referred to as custom drop area
+ -- The exact drop-point is the center of the custom drop area, which is defined as the center of the largest circle that is placed inside the custom drop area. 
 
 - At the source point, AGV request the delivery information from an edge server. Then, edge server uses a remote camera to obtain the top view of all destinations. The intelligence at the edge server
--- extracts the delivery information from the camera image and 
--- shares it with the AGV.
+ -- extracts the delivery information from the camera image and 
+ -- shares it with the AGV.
 
 
 ## Components
