@@ -1,22 +1,26 @@
 
 # Codesign of Edge Intelligence and Automated Guided Vehicle Control
 
-This is a demonstration of a semi-autonomous transportation task. 
+This is a demonstration of a semi-autonomous transportation task aided by edge intelligence. 
 - An automated guided vehicle (AGV) equipped with a robotic arm needs to 
- -- pick and object from a source point,
- -- follow a path defined by black stripes, and 
- -- drop the object at a specific drop-point in one of four destinations implicitly defined by a human operator.
+ - Pick an object from a source point,
+ - Follow a path defined by black stripes, and 
+ - Drop the object at a specific drop-point in one of four destinations implicitly defined by a human operator.
 
-- Human operator defines the destination and exact drop point (delivery information) by placing an irregular black surface inside a destination.
- -- Irregular shape is referred to as custom drop area
- -- The exact drop-point is the center of the custom drop area, which is defined as the center of the largest circle that is placed inside the custom drop area. 
+- Human operator defines the destination and exact drop point (delivery information) by placing an irregular black shape inside a destination.
+ - Irregular shape is referred to as custom drop area
+ - The exact drop-point is the center of the custom drop area, which is defined as the center of the largest circle that is placed inside the custom drop area. 
 
-- At the source point, AGV request the delivery information from an edge server. Then, edge server uses a remote camera to obtain the top view of all destinations. The intelligence at the edge server
- -- extracts the delivery information from the camera image and 
- -- shares it with the AGV.
+- At the source point, AGV request the delivery information from an edge server. Then, edge server uses a remote camera to obtain the bird's eye view of all destinations. The intelligence at the edge server
+ - Extracts the delivery information from the camera image and 
+ - Shares it with the AGV.
+
+## System Architecture
+
+The system architecture of this demonstration comprises of hardware, software and a robot platform.
 
 
-## Components
+## Hardware
 
 This are the hardware components used in the system:
 - Jetank powered by Nvidia Jetson nano developer module with 16GB eMMC and 4GB RAM
@@ -24,13 +28,7 @@ This are the hardware components used in the system:
 - Raspberry Pi 4 Model B
 - 64-bit Windows 10 compute
 
-### Robot platform
 
-Description
-
-### AGV
-
-Description
 
 
 ### Edge server
