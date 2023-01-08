@@ -60,7 +60,7 @@ The camera which observes the destinations consists of a Raspberry Pi V2 camera 
 
 
 **Code:**
-Contents in the folder [selection_robot](selection_robot)
+Contents in the folder [image_server](image_server)
 
 ### Edge server
 
