@@ -1,10 +1,10 @@
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
 img_size = (300,300)
-image_path = "D:/dataset1/image"
-label_path = "D:/dataset1/label"
-images_save_dir = "D:/dataset1/augmented/image"
-labels_save_dir = "D:/dataset1/augmented/label"
+image_path = "./dataset/image"
+label_path = "./dataset/label"
+images_save_dir = "./dataset/augmented/image"
+labels_save_dir = "./dataset/augmented/label"
 batch_size = 100
 
 data_gen_args = dict(
