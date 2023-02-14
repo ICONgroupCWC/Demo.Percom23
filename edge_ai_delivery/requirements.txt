@@ -7,7 +7,7 @@ python_dateutil==2.6.0
 scikit-image>=0.19.2
 setuptools >= 21.0.0
 swagger-ui-bundle >= 0.0.2
-# tensorflow>=2.8.0 # Won't run on IPC227E
-tensorflow >= 2.8.0
+# tensorflow ==2.8.0 # Won't run on IPC227E
+tensorflow == 2.8.0
 #./tensorflow-2.8.0-cp38-cp38-linux_x86_64.whl
 protobuf~=3.19.0
