@@ -1,6 +1,8 @@
 connexion == 2.14.2
 connexion[swagger-ui] == 2.14.2
+flask == 2.1.3
 h5py==2.10.0
+numpy == 1.23.1
 opencv-python==4.7.0.68
 python-polylabel==0.6
 python_dateutil==2.6.0
@@ -11,4 +13,3 @@ swagger-ui-bundle == 0.0.9
 tensorflow == 2.8.0
 #./tensorflow-2.8.0-cp38-cp38-linux_x86_64.whl
 protobuf~=3.19.6
-numpy == 1.23.1
