@@ -88,7 +88,7 @@ This installation needs python 3.8 and a windows operating system. If the operat
 ```python
 pip install -r requirements.txt
 ```
-Prior to running the server, the pre-trained cross-hair marker detection model should be added under the directory *swagger_server/models/*. Then if the required dependencies are satisfied, run the following command to start the server. The working directory for this should be *edge_ai_delivery*.
+Prior to running the server, the pre-trained cross-hair marker detection model should be added under the directory *edge_ai_delivery/swagger_server/models/*. Then if the required dependencies are satisfied, run the following command to start the server. The working directory for this should be *edge_ai_delivery*.
 
 ```python
 python -m swagger_server
