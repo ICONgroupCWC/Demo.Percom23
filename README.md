@@ -69,6 +69,8 @@ A powerful multi-purpose 64-bit Windows 10 computer acts as the edge server and 
 
 **Code:**
 Contents in the folder [edge_ai_delivery](edge_ai_delivery)
+
+This installation needs python 3.8 and a windows operating system. If the operating system differs, the corresponding tensorflow version should be installed. The required dependencies are given in the requirements.txt file. 
  
  **Installation:**
 ```python
