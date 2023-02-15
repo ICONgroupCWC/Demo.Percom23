@@ -12,7 +12,7 @@ import urllib.error
 def get_image(hostname="", id="1"):
     if hostname == "":
 
-        return cv.imread("./models/test_image.jpg")
+        return cv.imread("./swagger_server/models/test_image.jpg")
 
         # url_ = "https://i.postimg.cc/vbFq0CLq/new-objective-4.jpg?dl=1"
         # url_response = urllib.request.urlopen(url_)
