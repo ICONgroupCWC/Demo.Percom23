@@ -1,7 +1,7 @@
 openapi: 3.0.1
 info:
   title: AI Service
-  description: This is the IntellIoT AI servie. It is not (yet) documented anywhere
+  description: This is the AI service that has been developed alignign with the AI services for EU project IntellIoT.
   contact:
     name: ICON
     email: sumudu.samarakoon@oulu.fi
