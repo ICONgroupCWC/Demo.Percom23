@@ -34,7 +34,7 @@ The robot platform consist of routes spanning from a source point to multiple de
 
 ### AGV
 
-AGV is an off-the-shelf mobile crawler robot known as ”Jetank AI kit” which is powered by Nvidia Jetson nano developer module with 16GB eMMC and 4GB RAM. This is capable of running resource-demanding modern computing algorithms related to machine learning and computer vision and supports many popular libraries and frameworks. It uses an onboard camera to sense the environment and determine its control decisions such as navigation among source and destinations.
+AGV is an off-the-shelf mobile crawler robot known as ”Jetank AI kit” which is powered by Nvidia Jetson nano developer module with 16GB eMMC and 4GB RAM. This is capable of running resource-demanding modern computing algorithms related to machine learning and computer vision and supports many popular libraries and frameworks. It uses an onboard camera to sense the environment and determine its control decisions such as navigation among source and destinations. Moreover, it is essential to modify the IP addresses and the ports of edge server and remote camera under the entries `EDGE_SERVER_IP` and `CAMERA_IP`.
 
 
 **Code:**
