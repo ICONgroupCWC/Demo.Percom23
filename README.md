@@ -67,9 +67,9 @@ python3 image_server.py
 Image server will start on the port 8000 by default. The camera image can be accessed by the following API.
 
 ```http
-http://localhost:8000/capture
+http://[IP]:[PORT]/capture
 ```
-
+- [IP:PORT] - IP address and the port of the image server (e.g. "127.0.0.1:8000").
 
 **Code:**
 Contents in the folder [image_server](image_server)
