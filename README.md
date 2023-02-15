@@ -47,7 +47,7 @@ Contents in the folder [selection_robot](selection_robot)
 git clone https://github.com/waveshare/JETANK.git
 cd JETANK
 chmod +x install.py
-chomd +x config.py
+chmod +x config.py
 ./install.sh
 ./config.sh
 ```
