@@ -58,6 +58,18 @@ After setting up Jetank configuration successfully, the notebook provided in the
 
 The camera which observes the destinations consists of a Raspberry Pi V2 camera module which comes with a robust 8MP Sony IMX219 image sensor and connects with a Raspberry Pi 4 Model B computer, which hosts a web server that serves high resolution images of the storage area upon the requests from the edge server. This camera is able to provide static images up to 3280 × 2464 px resolution and it has a manually adjustable focal length.
 
+Image server is run on python 3.7 or higher and it can be run with the default python libraries. Use the following command to run the image server. 
+
+```python
+python3 image_server.py
+```
+
+Image server will start on the port 8000 by default. The camera image can be accessed by the following API.
+
+```http
+http://localhost:8000/capture
+```
+
 
 **Code:**
 Contents in the folder [image_server](image_server)
