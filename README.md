@@ -76,7 +76,11 @@ This installation needs python 3.8 and a windows operating system. If the operat
 ```python
 pip install -r requirements.txt
 ```
-After installing the required dependencies, run the server.
+After installing the required dependencies, use the following code to start the server.
+
+```python
+python -m swagger_server
+```
 
 **HTTP call to obtain delivery information:**
 ```http
