@@ -76,7 +76,7 @@ This installation needs python 3.8 and a windows operating system. If the operat
 ```python
 pip install -r requirements.txt
 ```
-After installing the required dependencies, run the following command to start the server.
+After installing the required dependencies, run the following command to start the server. The working directory for this should be edge_ai_delivery.
 
 ```python
 python -m swagger_server
