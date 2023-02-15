@@ -12,6 +12,7 @@ PAGE="""\
 </head>
 <body>
 <center><h1>Raspberry Pi - Remote Camera</h1></center>
+<p>Use<a href="http://localhost:8000/capture"> http://localhost:8000/capture </a>to get the camera image</p>
 </body>
 </html>
 """
@@ -21,7 +22,7 @@ class StreamingHandler(server.BaseHTTPRequestHandler):
     def do_GET(self):
         if self.path == '/':
             self.send_response(301)
-            self.send_header('Location', '/index.html')
+            self.send_header('Location', '/capture')
             self.end_headers()
         elif self.path == '/index.html':
             content = PAGE.encode('utf-8')
