@@ -34,8 +34,7 @@ The robot platform consist of routes spanning from a source point to multiple de
 
 ### AGV
 
-AGV is an off-the-shelf mobile crawler robot known as ”Jetank AI kit” which is powered by Nvidia Jetson nano developer module with 16GB eMMC and 4GB RAM. This is capable of running resource-demanding modern computing algorithms related to machine learning and computer vision and supports many popular libraries and frameworks. It uses an onboard camera to sense the environment and determine its control decisions such as navigation among source and destinations. Moreover, it is essential to modify the IP addresses and the ports of edge server and remote camera under the entries `EDGE_SERVER_IP` and `CAMERA_IP`.
-
+AGV is an off-the-shelf mobile crawler robot known as ”Jetank AI kit” which is powered by Nvidia Jetson nano developer module with 16GB eMMC and 4GB RAM. This is capable of running resource-demanding modern computing algorithms related to machine learning and computer vision and supports many popular libraries and frameworks. It uses an onboard camera to sense the environment and determine its control decisions such as navigation among source and destinations.
 
 **Code:**
 Contents in the folder [selection_robot](selection_robot)
@@ -52,7 +51,7 @@ chmod +x config.sh
 ./config.sh
 ```
 
-After setting up Jetank configuration successfully, the notebook provided in the [selection_robot](selection_robot) folder can be used to start the autonomous navigation of the AGV. In the notebook, the `Test Mode` button that is created while running the code needs to be enabled to physically move the robot.  
+After setting up Jetank configuration successfully, the notebook provided in the [selection_robot](selection_robot) folder can be used to start the autonomous navigation of the AGV. The notebook provides instructions and code blocks to navigate the robot as well as to visualize the live feed as observed by the robot. In the notebook, the `Test Mode` button that is created while running the code needs to be enabled to physically move the robot. Moreover, it is essential to modify the IP addresses and the ports of edge server and remote camera under the entries `EDGE_SERVER_IP` and `CAMERA_IP`. The robot's starting position should be just before picking up the object such that when the autonomous navigation is started, it will proceed to pick up the object first.
 
 ### Remote camera
 
@@ -82,7 +81,7 @@ A powerful multi-purpose 64-bit Windows 10 computer acts as the edge server and 
 **Code:**
 Contents in the folder [edge_ai_delivery](edge_ai_delivery)
 
-This installation needs python 3.8 and a windows operating system. If the operating system differs, the corresponding tensorflow version should be installed. The required dependencies are given in the *requirements.txt* file. 
+This installation needs python 3.8 and a windows operating system. If the operating system differs, the corresponding tensorflow version should be installed. The required dependencies are given in the *requirements.txt* file. The authors have used Anaconda to create and manage environments. After creating a new environment with python 3.8, the required dependencies can be installed with the following command.
  
  **Installation:**
 ```python
