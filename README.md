@@ -66,8 +66,8 @@ python3 image_server.py
 
 Image server will start on the port 8000 by default. The camera image can be accessed by the following API.
 
-```http
-http://[IP]:[PORT]/capture
+```
+http://[IP:PORT]/capture
 ```
 - [IP:PORT] - IP address and the port of the image server (e.g. "127.0.0.1:8000").
 
@@ -95,7 +95,7 @@ python -m swagger_server
 ```
 
 **HTTP call to obtain delivery information:**
-```http
+```
 http://[IP:PORT]/AI_Service/compute_deliveryInformation?storageId=[ID]&cameraHostname=[HOST]&cameraId=0
 ```
 - [IP:PORT] - IP address and the port of the AI service that is run on the edge server (e.g. "127.0.0.1:8080").
