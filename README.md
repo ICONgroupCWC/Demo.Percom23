@@ -102,7 +102,7 @@ http://[IP:PORT]/AI_Service/compute_deliveryInformation?storageId=[ID]&cameraHos
 - [ID] - Destiantion ID from \{1, 2, 3, 4\}. Using negative number returns a visualization for debugging purposes.
 - [HOST] - IP address and the port of the RPi camera (e.g. "127.0.0.1:8080"). Empty hostname will use the [test image](edge_ai_delivery/swagger_server/models/test_image.jpg) instead of contacting the camera.
 
-**Note**: For the testing purposes, the server generates several pop up windows visualizing camera image and its manupilations. By changing `SHOW_PLOTS` to `False` on the line 15 in the file *edge_ai_delivery/swagger_server/models/__init__.py*, the popup windows can be avoided. This is essential if the server is running on MAC OS.
+**Note**: For the testing purposes, the server generates several pop up windows visualizing camera image and its manupilations. By changing `SHOW_PLOTS` to `False` on the line 15 in the file *edge_ai_delivery/swagger_server/models/\_\_init\_\_.py*, the popup windows can be avoided. This is essential if the server is running on MAC OS.
 
 ## Demo in action
 
