@@ -111,3 +111,6 @@ http://[IP:PORT]/AI_Service/compute_deliveryInformation?storageId=[ID]&cameraHos
 1. Malith Gallage (<malith.gallage@oulu.fi>)
 2. Rafaela Scaciota (<rafaela.scaciotatimoesdasilva@oulu.fi>)
 3. Sumudu Samarakoon (<sumudu.samarakoon@oulu.fi>)
+
+## Publication
+Gallage, Malith, et al. "Codesign of edge intelligence and automated guided vehicle control." 2023 IEEE International Conference on Pervasive Computing and Communications Workshops and other Affiliated Events (PerCom Workshops). IEEE, 2023. [[arXiv](https://arxiv.org/abs/2305.09788)]
